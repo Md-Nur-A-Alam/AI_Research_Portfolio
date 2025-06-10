@@ -1,0 +1,5 @@
+1. DenseNet121
+2. EfficientNetB4
+3. MobileNetV3Large
+4. VGG16
+5. ResNet50
