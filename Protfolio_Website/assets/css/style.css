@@ -1,0 +1,98 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+    padding: 80px 20px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Section Title */
+.section-title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Timeline Styling */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+}
+.timeline li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.timeline li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode .navbar-light {
+    background-color: #333 !important;
+}
+.dark-mode .hero {
+    background: linear-gradient(to right, #4b5e6e, #3c4b3e);
+}
+.dark-mode footer {
+    background-color: #333;
+}
+.dark-mode .section-title,
+.dark-mode p,
+.dark-mode li {
+    color: #fff;
+}
+.dark-mode .btn-outline-primary {
+    color: #fff;
+    border-color: #fff;
+}
+.dark-mode .btn-outline-primary:hover {
+    background-color: #fff;
+    color: #222;
+}
+.dark-mode .timeline li:before {
+    background-color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
