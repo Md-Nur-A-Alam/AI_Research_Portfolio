@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research | Md. Nur A Alam</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo"><a href="/index.html">Md. Nur A Alam</a></div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="researchs.html" class="active">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="honors.html">Honors</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+
+  <main class="container">
+    <section class="research-section">
+      <h1>Research Projects</h1>
+      <p class="section-intro">
+        A selection of my ongoing and completed research work, including datasets, papers, and collaborations.
+      </p>
+
+      <div class="research-list">
+
+        <!-- Research Project 1 -->
+        <article class="research-card">
+          <img src="assets/img/research/edicinal-plant.png" alt="Medicinal Plants Classification" />
+          <div class="research-content">
+            <h3>Medicinal Plants Classification</h3>
+            <p>
+              Classifying medicinal plants growing in weed-infested areas using CNN models and custom datasets.
+            </p>
+            <p><strong>Status:</strong> Published (2025)</p>
+            <p><strong>Dataset:</strong> <a href="https://www.kaggle.com/datasets/mdnuraalambaust/bangladeshi-weedy-area-medicinal-plant" target="_blank" rel="noopener">Kaggle Dataset</a></p>
+            <p><strong>Paper:</strong> <a href="assets/pdf/publications/JURI-00075-2025-01.pdf" target="_blank" rel="noopener">View PDF</a></p>
+          </div>
+        </article>
+
+        <!-- Research Project 2 -->
+        <article class="research-card">
+          <img src="assets/img/research/Mental Health.png" alt="Mental Health Detection" />
+          <div class="research-content">
+            <h3>Mental Health Detection from Bengali Text and Memes</h3>
+            <p>
+              Multimodal AI system to detect mental health conditions using Bengali text and meme images.
+            </p>
+            <p><strong>Status:</strong> Under Review</p>
+            <p><strong>Collaboration:</strong> Solo Research</p>
+          </div>
+        </article>
+
+        <!-- Research Project 3 -->
+        <article class="research-card">
+          <img src="assets/img/research/Seed Quality.png" alt="Seed Quality Classification" />
+          <div class="research-content">
+            <h3>Seed Quality Classification</h3>
+            <p>
+              Image classification model to detect and categorize seed quality for agricultural improvements.
+            </p>
+            <p><strong>Status:</strong> Ongoing</p>
+            <p><strong>Notes:</strong> Dataset preparation phase</p>
+          </div>
+        </article>
+
+        <!-- Add more research projects as needed -->
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Inject Header and Footer -->
+  <script>
+    fetch("components/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+  </script>
+      <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+
+</body>
+
+</html>

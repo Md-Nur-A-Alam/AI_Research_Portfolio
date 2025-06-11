@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Md. Nur A Alam</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-p4V2gOZ2EYqLzRrXlY2ozwY5mx1QiUvQwWt9n4pPzjqFjp7Ud0cP2vXWqyz/rZbwIaRceHIdD6KXclGa1WUrFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo"><a href="/index.html">Md. Nur A Alam</a></div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="researchs.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="honors.html">Honors</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="projects-section">
+        <h1 class="section-title">🚀 Featured Projects</h1>
+        <div class="projects-grid">
+
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-thumb">
+                    <img src="assets/img/profile.jpg" alt="self tutor">
+                </div>
+                <h2>Self Tutor</h2>
+                <p>A web-based platform replacing traditional guides for students from class 1–10. Real-time self-tests,
+                    dynamic patterns & national ranking.</p>
+                <ul class="tech-list">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Bootstrap</li>
+                    <li>JS</li>
+                </ul>
+                <div class="project-links">
+                    <a href="#" class="btn" target="_blank"><i class="fas fa-globe"></i> Live</a>
+                    <a href="#" class="btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-thumb">
+                    <img src="assets/img/profile.jpg" alt="স্বাধীন">
+                </div>
+                <h2>স্বাধীন (Bangla Voice AI)</h2>
+                <p>A Bengali voice-controlled AI alarm system for inclusive tech access. Supports hands-free tasks &
+                    local language interaction.</p>
+                <ul class="tech-list">
+                    <li>Python</li>
+                    <li>SpeechRecognition</li>
+                    <li>gTTS</li>
+                </ul>
+                <div class="project-links">
+                    <a href="#" class="btn"><i class="fas fa-video"></i> Demo</a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-thumb">
+                    <img src="assets/img/profile.jpg" alt="Medicinal Plant Classifier">
+                </div>
+                <h2>Medicinal Plant Classifier</h2>
+                <p>Custom-trained CNN on environmental images of 16 plants to help herbal identification and automate
+                    classification in the field.</p>
+                <ul class="tech-list">
+                    <li>TensorFlow</li>
+                    <li>OpenCV</li>
+                    <li>Kaggle</li>
+                </ul>
+                <div class="project-links">
+                    <a href="#" class="btn"><i class="fas fa-book"></i> Paper</a>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <div class="project-thumb">
+                    <img src="assets/img/profile.jpg" alt="Carrot Defect Detection">
+                </div>
+                <h2>Carrot Defect Detection</h2>
+                <p>Used 5K+ images to train classifiers for detecting carrot defects, improving agriculture packaging
+                    and food safety efficiency.</p>
+                <ul class="tech-list">
+                    <li>PyTorch</li>
+                    <li>Sklearn</li>
+                    <li>Image Augmentation</li>
+                </ul>
+                <div class="project-links">
+                    <a href="#" class="btn"><i class="fas fa-chart-line"></i> Results</a>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+
+    <!-- Inject Header and Footer -->
+    <script>
+        fetch("components/header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+        fetch("components/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+</body>
+
+</html>

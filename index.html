@@ -1,160 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Research portfolio of Md. Nur A Alam, a CSE student specializing in AI, NLP, and tech for Bengali speakers.">
-    <meta name="keywords" content="AI, NLP, Bengali AI, research portfolio, CSE student">
-    <meta name="author" content="Md. Nur A Alam">
-    <meta property="og:title" content="Md. Nur A Alam | Research Portfolio">
-    <meta property="og:description" content="Explore my work in AI, NLP, and tech for Bengali speakers.">
-    <meta property="og:image" content="assets/img/profile.jpg">
-    <meta property="og:url" content="https://nur-alam.me">
-    <title>Md. Nur A Alam | Research Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="Protfolio_Website/assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Md. Nur A Alam — AI Enthusiast, Developer, Researcher, Leader. Explore my portfolio showcasing my skills, projects, and achievements.">
+  <title>Md. Nur A Alam | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Portfolio_Website/assets/css/style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p4V2gOZ2EYqLzRrXlY2ozwY5mx1QiUvQwWt9n4pPzjqFjp7Ud0cP2vXWqyz/rZbwIaRceHIdD6KXclGa1WUrFw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" >
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Md. Nur A Alam</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Protfolio_Website/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Protfolio_Website/publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Protfolio_Website/projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item">
-                        <button id="theme-toggle" class="btn btn-outline-secondary ms-2">Dark Mode</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" data-aos="fade-up">
-        <div class="container">
-            <h1>Hello, I'm Md. Nur A Alam</h1>
-            <p>Final Year CSE Student | AI & NLP Enthusiast | Educator | Tech Leader</p>
-            <a href="Protfolio_Website/assets/pdf/CV_NurAAlam.pdf" class="btn btn-primary mt-4" download>Download CV</a>
+  <!-- Header -->
+<header class="site-header">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="/index.html">Md. Nur A Alam</a>
         </div>
-    </section>
+        <nav class="navbar" id="navbar">
+            <ul class="nav-links">
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="Portfolio_Website/about.html">About</a></li>
+                <li><a href="Portfolio_Website/projects.html">Projects</a></li>
+                <li><a href="Portfolio_Website/researchs.html">Research</a></li>
+                <li><a href="Portfolio_Website/publications.html">Publications</a></li>
+                <li><a href="Portfolio_Website/honors.html">Honors</a></li>
+                <li><a href="Portfolio_Website/certificates.html">Certificates</a></li>
+                <li><a href="Portfolio_Website/blog.html">Blog</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        </nav>
 
-    <!-- About -->
-    <section id="about" class="container" data-aos="fade-up">
-        <h2 class="section-title">About Me</h2>
+    </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Md. Nur A Alam</span></h1>
+        <h2><span id="typed-text"></span></h2>
         <p>
-            I am a final-year CSE student at BAUST with a CGPA of 3.95. I specialize in AI, NLP, and meaningful tech for Bengali speakers.
-            I have led multiple tech communities and projects while excelling in competitive programming, research, and teaching.
+          Final-year CSE student | Passionate about AI, Research & Development <br> President @ BAUST Computer Club &
+          CSE Society
         </p>
-        <a href="Protfolio_Website/about.html" class="btn btn-outline-primary">Learn More</a>
-    </section>
+        <a href="Portfolio_Website/assets/pdf/CV_NurAAlam.pdf" class="btn" download>Download CV</a>
+      </div>
+      <div class="hero-image">
+        <img src="Portfolio_Website/assets/img/profile.jpg" alt="Md. Nur A Alam" />
+      </div>
+    </div>
+  </section>
 
-    <!-- Research -->
-    <section id="research" class="container" data-aos="fade-up">
-        <h2 class="section-title">Research Interests</h2>
-        <ul>
-            <li>Natural Language Processing (NLP)</li>
-            <li>Multimodal AI Systems</li>
-            <li>AI for Health and Education</li>
-            <li>Human-Centered AI & AGI</li>
-        </ul>
-    </section>
+  <!-- Quick Summary Cards -->
+  <section class="overview-section">
+    <div class="container card-grid">
+      <div class="card">
+        <h3>Projects</h3>
+        <p>Built web platforms, AI systems, and embedded solutions with real-world impact.</p>
+        <a href="Portfolio_Website/projects.html" class="btn-small">View Projects</a>
+      </div>
+      <div class="card">
+        <h3>Research</h3>
+        <p>Focused on AI, Bangla NLP, medical classification, and multimodal data.</p>
+        <a href="Portfolio_Website/researchs.html" class="btn-small">Explore Research</a>
+      </div>
+      <div class="card">
+        <h3>Achievements</h3>
+        <p>🥇 National Math Olympiads, 🏆 Inter-University Contests, 🎓 BNCC & Cultural Events</p>
+        <a href="Portfolio_Website/honors.html" class="btn-small">View Honors</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Publications -->
-    <section id="publications" class="container" data-aos="fade-up">
-        <h2 class="section-title">Selected Publications</h2>
-        <ul>
-            <li><strong>Alam, M.N.A.</strong> (2025). <em>AI-Based Classification of Medicinal Plants Growing in Weed-Infested Areas in Bangladesh</em> (Under Review).</li>
-            <li><strong>Alam, M.N.A.</strong> (2025). <em>Multimodal Meme Emotion Classifier for Bangla Memes</em> (In Progress).</li>
-        </ul>
-        <a href="Protfolio_Website/publications.html" class="btn btn-outline-primary">View All Publications</a>
-    </section>
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container cta-content">
+      <h2>Looking for a passionate developer or researcher?</h2>
+      <p>Let's collaborate and create something impactful together!</p>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects" class="container" data-aos="fade-up">
-        <h2 class="section-title">Notable Projects</h2>
-        <ul>
-            <li><strong>স্বাধীন:</strong> A Bengali Voice-Controlled AI Alarm System</li>
-            <li><strong>Self Tutor:</strong> Personalized e-learning platform for school students</li>
-            <li><strong>Bangla QA NLP System:</strong> Natural language Bangla question-answering system</li>
-            <li><strong>HSMS:</strong> Hostel & Seat Management System</li>
-            <li><strong>Multimodal Pulse Classification:</strong> Seed classification using images + physical traits</li>
-        </ul>
-        <a href="Protfolio_Website/projects.html" class="btn btn-outline-primary">View All Projects</a>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="container my-5" data-aos="fade-up">
-        <h2 class="section-title">Contact Me</h2>
-        <form action="https://formspree.io/f/xblygbbj" method="POST">
-            <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
-            </div>
-            <div class="mb-3">
-                <label for="emailContact" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="emailContact" name="email" placeholder="name@example.com" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-success">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Md. Nur A Alam | All rights reserved</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/md-nur-a-alam13/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x2x"></i></a>
-                <a href="https://github.com/Md-Nur-A-Alam" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
-                <a href="mailto:210201044@baust.edu.bd" aria-label="Email"><i class="fas fa-envelope fa-2x"></i></a>
-            </div>
+  <!-- contact actoin -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xblygbbj" method="POST" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
         </div>
-    </footer>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init();
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
 
-        // Dark Mode Toggle
-        const toggleButton = document.getElementById('theme-toggle');
-        const body = document.body;
-        toggleButton.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
-            toggleButton.textContent = body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
-        });
-        if (localStorage.getItem('theme') === 'dark') {
-            body.classList.add('dark-mode');
-            toggleButton.textContent = 'Light Mode';
-        }
+  <!-- JS Scripts -->
+  <script src="Portfolio_Website/assets/js/main.js"></script>
+  <script src="Portfolio_Website/assets/js/typed.js"></script>
 
-        // Form Validation
-        document.querySelector('form').addEventListener('submit', function(e) {
-            const name = document.querySelector('#name').value;
-            const email = document.querySelector('#emailContact').value;
-            const message = document.querySelector('#message').value;
-            if (!name || !email || !message) {
-                e.preventDefault();
-                alert('Please fill out all fields.');
-            }
-        });
-    </script>
+  <!-- Inject Header and Footer -->
+  <script>
+    fetch("Portfolio_Website/components/header_idx.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+    fetch("Portfolio_Website/components/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+  </script>
 </body>
+
 </html>

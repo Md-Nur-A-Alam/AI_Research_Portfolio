@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publications | Md. Nur A Alam</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo"><a href="/index.html">Md. Nur A Alam</a></div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="researchs.html" >Research</a></li>
+                    <li><a href="publications.html"class="active">Publications</a></li>
+                    <li><a href="honors.html">Honors</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- body -->
+
+    <main class="container">
+        <section class="publications-section">
+            <h1>Publications</h1>
+            <p class="section-intro">Some of my published work in conferences and journals.</p>
+
+            <div class="publication-list">
+                <!-- Publication 1 -->
+                <div class="publication-card">
+                    <div class="publication-thumbnail">
+                        <img src="assets/img/publications/edicinal-plant.png"
+                            alt="Medicinal Plant Paper Thumbnail" />
+                    </div>
+                    <div class="publication-content">
+                        <h3>AI-Based Classification of Medicinal Plants Growing in Weed-Infested Areas in Bangladesh
+                        </h3>
+                        <p><strong>Authors:</strong> Md. Nur A Alam, Suraiya Shorna, Kayes Bin Sayed</p>
+                        <p><strong>King Fahd University:</strong> JURI 2025</p>
+                        <p><strong>Year:</strong> 2025</p>
+                        <a href="assets/pdf/publications/JURI-00075-2025-01.pdf" target="_blank" class="btn-small">
+                            <i class="fas fa-external-link-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="publication-card">
+                    <div class="publication-thumbnail">
+                        <img src="assets/img/publications/edicinal-plant.png"
+                            alt="Medicinal Plant Paper Thumbnail" />
+                    </div>
+                    <div class="publication-content">
+                        <h3>Mental Health Detection from Bengali Text and Memes</h3>
+                        <p><strong>Authors:</strong> Md. Nur A Alam</p>
+                        <p><strong>Venue:</strong> Under Review – Journal of Multimodal AI</p>
+                        <p><strong>Year:</strong> 2025</p>
+                        <a href="#" class="btn-small disabled" aria-disabled="true">
+                            <i class="fas fa-lock"></i> Coming Soon
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add more publications here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+
+    <!-- Inject Header and Footer -->
+    <script>
+        fetch("components/header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+        fetch("components/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+
+    <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+
+</body>
+
+</html>

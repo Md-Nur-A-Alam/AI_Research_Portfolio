@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Honors & Achievements | Md. Nur A Alam</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo"><a href="/index.html">Md. Nur A Alam</a></div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="researchs.html" >Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="honors.html"class="active">Honors</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="honors-section">
+            <h1>Honors & Achievements</h1>
+            <p class="section-intro">Milestones and recognitions I have earned along my journey so far.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3><i class="fas fa-trophy"></i> Intervarsity Programming Contest Champion</h3>
+                    <div class="timeline-meta">
+                        <i class="fas fa-calendar-alt"></i><span>2024</span>
+                        <i class="fas fa-school"></i><span>CSE Society, BAUST</span>
+                    </div>
+                    <p>Won first place among various university teams for problem-solving and coding excellence.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3><i class="fas fa-medal"></i> National Math Olympiad – Regional Silver Medal</h3>
+                    <div class="timeline-meta">
+                        <i class="fas fa-calendar-alt"></i><span>2023</span>
+                        <i class="fas fa-globe"></i><span>Regional Level</span>
+                    </div>
+                    <p>Secured silver medal competing with the best math talents at the regional level nationwide.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3><i class="fas fa-rocket"></i> Science Fair Champion (Solar-Powered Train)</h3>
+                    <div class="timeline-meta">
+                        <i class="fas fa-calendar-alt"></i><span>2017</span>
+                        <i class="fas fa-university"></i><span>School Science Fair</span>
+                    </div>
+                    <p>Designed and demonstrated a solar-powered train, winning first prize at the science fair.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3><i class="fas fa-brain"></i> Math Olympiad – Divisional Bronze Medal</h3>
+                    <div class="timeline-meta">
+                        <i class="fas fa-calendar-alt"></i><span>2022</span>
+                        <i class="fas fa-globe"></i><span>Divisional Level</span>
+                    </div>
+                    <p>Awarded bronze medal in math problem-solving competition at the divisional level.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3><i class="fas fa-theater-masks"></i> Champion in Poetry & Acting Competitions</h3>
+                    <div class="timeline-meta">
+                        <i class="fas fa-calendar-alt"></i><span>2021</span>
+                        <i class="fas fa-users"></i><span>Cultural Festivals</span>
+                    </div>
+                    <p>Won multiple awards for poetry recitation and acting in cultural events.</p>
+                </div>
+
+                <!-- Add more timeline-items here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Inject Header and Footer -->
+    <script>
+        fetch("components/header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+        fetch("components/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+
+    <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+</body>
+
+</html>

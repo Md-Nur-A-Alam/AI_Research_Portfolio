@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Certificates | Md. Nur A Alam</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- FontAwesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-p4V2gOZ2EYqLzRrXlY2ozwY5mx1QiUvQwWt9n4pPzjqFjp7Ud0cP2vXWqyz/rZbwIaRceHIdD6KXclGa1WUrFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo"><a href="/index.html">Md. Nur A Alam</a></div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="researchs.html" >Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="honors.html">Honors</a></li>
+                    <li><a href="certificates.html"class="active">Certificates</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="certificates-section">
+            <h1>Certificates & Achievements</h1>
+            <p class="section-intro">Here are some certificates I have earned during my academic and professional
+                journey.</p>
+
+            <div class="certificate-grid">
+                <!-- Sample certificate card -->
+                <article class="certificate-card">
+                    <img src="assets/img/certificates/Entra University Programming contest.jpg" alt="Certificate of Excellence" />
+                    <div class="certificate-info">
+                        <h3>Certificate of Excellence in Programming</h3>
+                        <p><strong>Issued by:</strong> Programming Hero</p>
+                        <p><strong>Date:</strong> March 2024</p>
+                        <a href="assets/img/certificates/Entra University Programming contest.jpg" target="_blank" class="btn-small"
+                            aria-label="View Certificate PDF">
+                            <i class="fas fa-file-pdf"></i> View PDF
+                        </a>
+                    </div>
+                </article>
+
+                <article class="certificate-card">
+                    <img src="assets/img/certificates/Entra University Programming contest.jpg" alt="National Math Olympiad Certificate" />
+                    <div class="certificate-info">
+                        <h3>National Math Olympiad 2023 (Regional)</h3>
+                        <p><strong>Issued by:</strong> Bangladesh Math Foundation</p>
+                        <p><strong>Date:</strong> December 2023</p>
+                        <a href="assets/img/certificates/Entra University Programming contest.jpg" target="_blank" class="btn-small"
+                            aria-label="View Certificate PDF">
+                            <i class="fas fa-file-pdf"></i> View PDF
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Add more certificate cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+
+    <!-- Inject Header and Footer -->
+    <script>
+        fetch("components/header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+        fetch("components/footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+
+    <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.js"></script>
+
+</body>
+
+</html>
